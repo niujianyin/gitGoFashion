@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>点妆</title>
+    <meta name="Keywords" content="彩妆师、上门服务、化妆、时尚、点妆。" />
+    <meta name="Description" content="这是一款由新浪出品，提供高级彩妆师上门化妆服务的应用。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Devices Support @begin -->
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <!-- Mobile Devices Support @end -->
+    <link rel="shortcut icon" href="" />
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./css/base.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/mobiscroll.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" media="all" />
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <!-- created by jianyin1 2015-2-9 -->
+    <style>html{ background-color: #f0f4fa;}</style>
+    <input id="hiddenInfor" type="hidden" data-select="android" data-uname="汪峰" data-mobile="15210298678" data-time="" data-addr="北京市海淀区北四环西路58号理想国际大厦18层">
+    <header class="n_header">
+        <h2>填写订单，来预约你喜欢的化妆师</h2>
+    </header>
+    <div class="n_h80"></div>
+
+    <div class="n_box" id="n_box">
+        <div class="n_box_select">
+            <select name="n_selectMakeup" id="n_selectMakeup" class="n_selectMakeup" data-tips="您未选择妆容!">
+                <option value="">请选择妆容</option>
+                <option value="mobiscroll-dark">Mobiscroll Dark</option>
+                <option value="android">Android</option>
+                <option value="android-holo">Android Holo</option>
+                <option value="android-holo-light">Android Holo Light</option>
+                <option value="ios">iOS</option>
+                <option value="ios-classic">iOS Classic</option>
+                <option value="sense-ui">Sense UI</option>
+                <option value="wp">Windows Phone</option>
+                <option value="wp-light">Windows Phone Light</option>
+            </select>
+        </div>
+
+        <!-- <div class="n_order_tips">联系人、电话与地址:</div> -->
+        <div class="n_h40"></div>
+        <div class="n_box_item n_box_item3">
+            <div class="n_bi">
+                <label for="n_guestname" class="n_guestnameLabel"></label>
+                <input type="text" placeholder="客户姓名" id="n_guestname" data-tips="您未填写客户姓名!" />
+            </div>
+            <div class="n_bi n_borderTop">
+                <label for="n_telphone" class="n_telphoneLabel"></label>
+                <input type="text" placeholder="手机号码" id="n_telphone" data-tips="您未填写手机号码!"  data-tips1 ="手机号码格式不正确!" />
+            </div>
+            <div class="n_bi n_borderTop">
+                <label for="n_address" class="n_addressLabel"></label>
+                <input type="text" placeholder="服务地址" id="n_address"  data-tips="您未填写服务地址!" />
+            </div>
+        </div>
+        <div class="n_setContact">
+            <a href="javascript:;" class="n_setContactTxt" id="n_setContactTxt">设为常用联系方式</a>
+        </div>
+        <!-- <div class="n_order_tips">选择服务时间:</div> -->
+        <div class="n_box_item">
+            <div class="n_bi">
+                <label for="n_serverdate" class="n_serverdateLabel"></label>
+                <div id="n_sd" class="n_a9a9a9" data-role="datetime">服务时间</div>
+                <input type="hidden" placeholder="服务时间" id="n_serverdate" data-tips="您未选择服务时间!" />
+            </div>
+        </div>
+    </div>
+    <footer class="n_footer mt40"><input type="submit" class="n_btn" id="n_order" value="预约">
+    </footer>
+    <div class="n_h100"></div>
+    <!-- n_nav_icon00 10 20 30 为选中状态 -->
+    <nav class="n_nav">
+        <div class="n_nav_box">
+            <a href="#" class="n_nav_item selected">
+                <i class="n_nav_icon0"></i>
+                <span class="n_nav_txt">预约美妆</span>
+            </a>
+            <a href="#" class="n_nav_item">
+                <i class="n_nav_icon1"></i>
+                <span class="n_nav_txt">化妆师</span>
+            </a>
+            <a href="#" class="n_nav_item">
+                <i class="n_nav_icon2"></i>
+                <span class="n_nav_txt">我的订单</span>
+            </a>
+            <a href="#" class="n_nav_item">
+                <i class="n_nav_icon3"></i>
+                <span class="n_nav_txt">个人中心</span>
+            </a>
+        </div>
+    </nav>
+
+    <script type="text/javascript" src="./scripts/base.min.js"></script>
+    <script type="text/javascript" src="./scripts/mobiscroll.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.min.js"></script>
+    <script> 
+        fn_1();
+    </script>
+</body>
+</html>

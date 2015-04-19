@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>点妆</title>
+    <meta name="Keywords" content="彩妆师、上门服务、化妆、时尚、点妆。" />
+    <meta name="Description" content="这是一款由新浪出品，提供高级彩妆师上门化妆服务的应用。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Devices Support @begin -->
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <!-- Mobile Devices Support @end -->
+    <link rel="shortcut icon" href="" />
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./css/base.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/mobiscroll.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" media="all" />
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <!-- created by jianyin1 2015-2-9 -->
+    <style>
+        html{ background-color: #fff;}
+    </style>
+    <input id="hiddenInfor" type="hidden" data-uid="1987" data-pid="10" data-uname="汪峰" data-mobile="15210298678" data-time="" data-addr="北京市海淀区北四环西路58号理想国际大厦18层">
+    <script>
+        window.globalpicList = [
+                {
+                    width:'400',
+                    height:'300',
+                    content: "./images/1.jpg",
+                },
+                {
+                    width:'400',
+                    height:'300',
+                    content: "./images/2.jpg",
+                },
+                {
+                    width:'400',
+                    height:'300',
+                    content: "./images/3.jpg",
+                },
+                {
+                    width:'400',
+                    height:'300',
+                    content: "./images/4.jpg",
+                }
+            ];
+    </script>
+    <header class="n_header">
+        <h2>用户名的婚纱单品</h2>
+    </header>
+    <div class="n_h80"></div>
+    
+    <!-- <a href="" target="_blank" class="c_show">
+        <img src="images/c_Pic3.jpg" alt=""/>
+    </a> -->
+
+    <div id="iSlider-effect-wrapper">
+        <div id="animation-effect" class="iSlider-effect"></div>
+    </div>
+
+
+    <div class="c_blk">
+     <div class="c_total"><span>￥23611</span></div>
+     <div class="select">
+        <select name="n_selectNum1" id="n_selectNum1" class="n_selectNum1">
+            <option value="1">单次</option>
+            <option value="2">两次</option>
+            <option value="3">半天</option>
+            <option value="4">一天</option>
+        </select> 
+     </div>
+     <div class="c_shou2">
+        <span>7人做过</span><em id="c_shou" data-uid="" data-exid="" data-type=""></em>
+     </div>
+   </div>
+   <div class="c_blk2"></div>
+   <div class="c_Top clearfix">
+     <a href="" target="_blank">
+         <div class="person"><img src="images/c_Pic2.jpg" alt=""/></div>
+         <div class="info color">
+            <h3>化妆师Selina</h3>
+            <span>东田高级化妆师</span>
+            <span>接单：37</span>
+         </div>
+         <span class="more"></span>
+      </a>
+   </div>
+   <div class="c_bar c_blk3 clearfix">
+      <div><span>专业：5</span></div>
+      <div><span>专业：5</span></div>
+      <div><span>专业：5</span></div>
+   </div>
+    <p class="c_infos">妆饰首席资深化妆师:蓓蓓 优秀化妆讲师,师从台湾化妆师,从事化妆行业12年,</p>
+    <div class="c_comment">
+        <span class="nums">评论：195条</span>
+        <a href="" target="_blank" class="more"></a>
+    </div>
+
+    <div class="n_singleBox">
+        <div class="n_sb_tips">客户姓名：</div>
+        <div class="n_sb_telBox">
+            <input type="text" placeholder="客户姓名" id="n_sb_name" data-tips="您未填写客户姓名!">
+        </div>
+        <div class="n_sb_tips">给自己/朋友预约：</div>
+        <div class="n_sb_telBox">
+            <input type="text" placeholder="手机号码" id="n_sb_telphone" data-tips="您未填写手机号码!" data-tips1="手机号码格式不正确!">
+        </div>
+        <div class="n_sb_tips1">选择服务时间和地址：</div>
+        <div class="n_box_item n_box_item2 mt0">
+            <div class="n_bi">
+                <span class="n_bg_ar"></span>
+                <label for="n_serverdate" class="n_serverdateLabel"></label>
+                <div id="n_sd" class="n_a9a9a9" data-role="datetime">服务时间</div>
+                <input type="hidden" placeholder="服务时间" id="n_serverdate" data-tips="您未选择服务时间!" />
+            </div>
+            <div class="n_bi n_borderTop">
+                <label for="n_address" class="n_addressLabel"></label>
+                <input type="text" placeholder="服务地址" id="n_address" data-tips="您未填写服务地址!">
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:;" class="c_button c_position" id="n_btn_works">选中该作品</a>
+    <script type="text/javascript" src="./scripts/base.min.js"></script>
+    <script type="text/javascript" src="./scripts/mobiscroll.min.js"></script>
+    <script type="text/javascript" src="./scripts/islider.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.min.js"></script>
+    <script>
+        fn_18();
+    </script>
+</body>
+</html>

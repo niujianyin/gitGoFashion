@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>点妆化妆师管理平台</title>
+    <meta name="Keywords" content="彩妆师、上门服务、化妆、时尚、点妆。" />
+    <meta name="Description" content="这是一款由新浪出品，提供高级彩妆师上门化妆服务的应用。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Devices Support @begin -->
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <!-- Mobile Devices Support @end -->
+    <link rel="shortcut icon" href="" />
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./css/base.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/mobiscroll.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" media="all" />
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <!-- created by jianyin1 2015-3-9 -->
+    <header class="n_header">
+        <h1>注册新用户</h1>
+    </header>
+    <div class="n_h80"></div>
+
+    <div class="n_box" id="n_box">
+        <div class="n2_box_item">
+            <div class="n2_bi">
+                <label for="n2_city" class="n2_cityLabel">城市:</label>
+                <input type="text" placeholder="北京" value="北京" id="n2_city" disabled="true" data-tips="城市" />
+            </div>
+        </div>
+        <div class="n2_box_item">
+            <div class="n2_bi">
+                <label for="n2_name" class="n2_nameLabel">姓名:</label>
+                <input type="text" placeholder="输入姓名" id="n2_name" data-tips="姓名" />
+            </div>
+        </div>
+        <div class="n2_box_item">
+            <div class="n2_bi">
+                <label for="n2_tel" class="n2_telLabel">手机:</label>
+                <input type="tel" autocomplete="off" placeholder="输入手机号码" id="n2_tel" data-tips="手机号码" />
+            </div>
+        </div>
+        <div class="n2_box_item">
+            <div class="n2_bi n2_bi2">
+                <label for="n2_workYear" class="n2_workYearLabel">工作年限:</label>
+                <input type="text" placeholder="输入工作年限" id="n2_workYear" data-tips="工作年限" />
+            </div>
+        </div>
+        <div class="n2_box_company">
+            <span class="n2_bcLabel">公司:</span>
+            <select name="n2_selectCompany" id="n2_selectCompany" class="n2_selectCompany"  data-tips="公司">
+                <option value="1">新浪微博</option>
+                <option value="2">Mobiscroll Dark</option>
+                <option value="3">Android</option>
+                <option value="4">Android Holo</option>
+                <option value="5">Android Holo Light</option>
+                <option value="6">iOS</option>
+                <option value="7">iOS Classic</option>
+                <option value="8">Sense UI</option>
+                <option value="9">Windows Phone</option>
+                <option value="10">Windows Phone Light</option>
+            </select>
+        </div>
+        <div class="n2_box_sex" id="n2_box_sex">
+            <span class="n2_bsLabel">性别:</span>
+            <span class="n2_sex" id="n2_sex_man" data-radio="1">男</span>
+            <span class="n2_sex n2_sex_selected" id="n2_sex_woman" data-radio="2">女</span>
+        </div>
+        <div class="n2_box_description">
+            <span class="n2_bdLabel">描述:</span>
+            <textarea name="n2_bd" id="n2_bd" data-tips="描述"></textarea>
+        </div>
+    </div>
+    <a href="javascript:;" id="n2_register">注册</a>
+    <script type="text/javascript" src="./scripts/base.min.js"></script>
+    <script type="text/javascript" src="./scripts/mobiscroll.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.min.js"></script>
+    <script>
+        fn_h_2();
+    </script>
+</body>
+</html>

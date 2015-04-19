@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>时尚到家</title>
+    <meta name="Keywords" content="时尚到家" />
+    <meta name="Description" content="时尚到家" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Devices Support @begin -->
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <!-- Mobile Devices Support @end -->
+    <link rel="shortcut icon" href="" />
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./css/base.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/mobiscroll.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css" media="all" />
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <!-- created by jianyin1 2015-3-9 -->
+    <style>html{ background-color: #f4f4f4;}</style>
+    
+    <div id="n2_datepickerBox">
+        <div id="n2_dpr" data-role="datetime">点击切换设置日期</div>
+        <div id="n2_dp_txt" data-role="datetime"></div>
+        <input type="hidden" placeholder="点击切换设置日期" id="n2_datepicker" readonly="true" data-tips="您未选择服务日期!" class="">
+    </div>
+
+    <div class="n2_ordersState" id="n2_ordersState">
+        <div class="n2_ns_0"><span class="n2_ns_square"></span>可接单状态</div>
+        <div class="n2_ns_1"><span class="n2_ns_square"></span>不可接单状态</div>
+    </div>
+    <div class="n2_ordersBtn" id="n2_ordersBtn">
+        <span class="n2_nb_0">全选可接单</span>
+        <span class="n2_nb_1">全选不可接单</span>
+    </div>
+    <div class="n2_orderTips">注：如果您没有做维护，默认全天可接单。范围：北京</div>
+    <div id="n2_orderTime" class="n2_orderTime">
+        <span class="n2_ot" data-value="00">00:00</span>
+        <span class="n2_ot" data-value="01">01:00</span>
+        <span class="n2_ot" data-value="02">02:00</span>
+        <span class="n2_ot" data-value="03">03:00</span>
+        <span class="n2_ot" data-value="04">04:00</span>
+        <span class="n2_ot" data-value="05">05:00</span>
+        <span class="n2_ot" data-value="06">06:00</span>
+        <span class="n2_ot" data-value="07">07:00</span>
+        <span class="n2_ot" data-value="08">08:00</span>
+        <span class="n2_ot" data-value="09">09:00</span>
+        <span class="n2_ot" data-value="10">10:00</span>
+        <span class="n2_ot" data-value="11">11:00</span>
+        <span class="n2_ot" data-value="12">12:00</span>
+        <span class="n2_ot" data-value="13">13:00</span>
+        <span class="n2_ot" data-value="14">14:00</span>
+        <span class="n2_ot" data-value="15">15:00</span>
+        <span class="n2_ot" data-value="16">16:00</span>
+        <span class="n2_ot" data-value="17">17:00</span>
+        <span class="n2_ot" data-value="18">18:00</span>
+        <span class="n2_ot" data-value="19">19:00</span>
+        <span class="n2_ot" data-value="20">20:00</span>
+        <span class="n2_ot" data-value="21">21:00</span>
+        <span class="n2_ot" data-value="22">22:00</span>
+        <span class="n2_ot" data-value="23">23:00</span>
+    </div>
+    <div class="n2_setContact">
+        <a href="javascript:;" class="n2_setContactTxt" id="n2_setContactTxt">设为常用接单时间</a>
+    </div>
+    
+    <div class="n2_orderAreaTips">选择接单范围：</div>
+    <div id="n2_orderArea" class="n2_orderArea">
+        <span class="n2_oa" data-value="01">全北京</span>
+        <span data-value="02">海淀</span>
+        <span data-value="03">昌平</span>
+        <span data-value="04">门头沟</span>
+        <span data-value="05">石景山</span>
+        <span data-value="06">东城</span>
+        <span data-value="07">朝阳</span>
+        <span data-value="08">通州</span>
+        <span data-value="09">房山</span>
+        <span data-value="10">大兴</span>
+        <span data-value="11">其他</span>
+    </div>
+    <div class="n2_setContact">
+        <a href="javascript:;" class="n2_setContactTxt" id="n2_setContactArea">设为常用接单范围</a>
+    </div>
+
+
+    <a href="javascript:;" id="n2_saveSetUp">保存设置</a>
+    <nav class="n_nav">
+        <div class="n_nav_box">
+            <a href="#" class="n_nav_item">
+                <i class="n2_nav_icon0"></i>
+                <span class="n_nav_txt">我的订单</span>
+            </a>
+            <a href="#" class="n_nav_item selected">
+                <i class="n2_nav_icon1"></i>
+                <span class="n_nav_txt">接单设置</span>
+            </a>
+            <a href="#" class="n_nav_item">
+                <i class="n2_nav_icon2"></i>
+                <span class="n_nav_txt">我的作品</span>
+            </a>
+            <a href="#" class="n_nav_item">
+                <i class="n2_nav_icon3"></i>
+                <span class="n_nav_txt">个人中心</span>
+            </a>
+        </div>
+    </nav>
+
+    <script type="text/javascript" src="./scripts/base.min.js"></script>
+    <script type="text/javascript" src="./scripts/mobiscroll.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.min.js"></script>
+    <script>
+        fn_h_13();
+    </script>
+</body>
+</html>
